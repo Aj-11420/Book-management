@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book World</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 30px 10px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    header p {
+      margin-top: 8px;
+      font-size: 18px;
+    }
+
+    .book-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    .book-card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      width: 300px;
+      margin: 15px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.2s ease;
+      cursor: pointer;
+    }
+
+    .book-card:hover {
+      transform: scale(1.03);
+    }
+
+    .book-card img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .book-card h2 {
+      margin: 15px 0 10px;
+      color: #4CAF50;
+    }
+
+    .book-card p {
+      color: #555;
+      font-size: 16px;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #ddd;
+      padding: 10px;
+      font-size: 14px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>📚 Book World</h1>
+    <p>Discover your next great read!</p>
+  </header>
+
+  <main class="book-container">
+    <div class="book-card" onclick="showBookInfo('Wings of Fire')">
+      <img src="https://th.bing.com/th/id/OIP.eFRqmOE3034xb_RKiYfdOwHaLU?w=120&h=184&c=7&r=0&o=5&pid=1.7" alt="Wings of Fire">
+      <h2>Wings of Fire</h2>
+      <p>An autobiography of Dr. A.P.J. Abdul Kalam, covering his journey from a small-town boy to the Missile Man of India and the President.</p>
+    </div>
+
+    <div class="book-card" onclick="showBookInfo('Harry Potter')">
+      <img src="https://m.media-amazon.com/images/I/81YOuOGFCJL.jpg" alt="Harry Potter">
+      <h2>Harry Potter</h2>
+      <p>The magical journey of a young wizard, Harry, as he faces dark forces and uncovers secrets about his past at Hogwarts School of Witchcraft and Wizardry.</p>
+    </div>
+
+    <div class="book-card" onclick="showBookInfo('Rich Dad Poor Dad')">
+      <img src="https://m.media-amazon.com/images/I/81bsw6fnUiL.jpg" alt="Rich Dad Poor Dad">
+      <h2>Rich Dad Poor Dad</h2>
+      <p>Robert Kiyosaki’s bestselling guide to financial education, explaining how mindset and smart investing lead to wealth and success.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Book World. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function showBookInfo(bookName) {
+      alert("You clicked on: " + bookName);
+    }
+  </script>
+
+</body>
+</html>
